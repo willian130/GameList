@@ -5,15 +5,14 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.4.6</version>
+		<version>3.4.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.wilian</groupId>
-	<artifactId>Listgames</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>Listgames</name>
-	<description>intensivão Java Spring</description>
-	<url/>
+		<groupId>com.wilian</groupId>
+			<artifactId>Listgames</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<name>Listgames</name>
+			<description>intensivão Java Spring</description>	<url/>
 	<licenses>
 		<license/>
 	</licenses>
@@ -58,6 +57,11 @@
 
 	<build>
 		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.1.0</version>
+			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
