@@ -27,7 +27,7 @@ public class Game {
     public Game(){
 
     }
-    public Game(Long id, String title, Integer year, String genre, String platforms,
+    public Game(Long id, String title, Integer year, String genre, String platforms,Double score,
                 String imgUrl, String shortDescription,String longDescription) {
         this.id = id;
         this.title = title;
@@ -77,6 +77,13 @@ public class Game {
 
     public void setPlatform(String platforms) {
         this.platforms = platforms;
+    }
+
+    public Double getScore() {
+        return score;
+    }
+    public void setScore(Double score) {
+        this.score = score;
     }
 
     public String getImgUrl() {
