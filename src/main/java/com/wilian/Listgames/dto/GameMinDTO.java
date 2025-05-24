@@ -2,6 +2,7 @@ package com.wilian.Listgames.dto;
 
 import java.util.List;
 
+
 import com.wilian.Listgames.entities.Game;
 
 public class GameMinDTO {
