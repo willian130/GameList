@@ -1,7 +1,6 @@
 package com.wilian.Listgames.dto;
 
-import java.util.List;
-
+import com.wilian.Listgames.Projections.GameMinProjection;
 
 import com.wilian.Listgames.entities.Game;
 
@@ -23,6 +22,15 @@ public GameMinDTO(Game entity) {
 	year = entity.getYear();
     imgUrl =entity.getImgUrl();
 	shortDescription = entity.getShortDescription();
+}
+
+public GameMinDTO(GameMinProjection projection) {
+
+	id = projection.getId();
+	title = projection.getTitle();
+	year = projection.getYear();
+    imgUrl =projection.getImgUrl();
+	shortDescription = projection.getShortDescription();
 }
 
 public Long getId() {
